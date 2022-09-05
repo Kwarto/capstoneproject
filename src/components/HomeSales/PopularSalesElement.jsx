@@ -8,6 +8,10 @@ export const PopSalesWrapper = styled.div`
  grid-template-columns: repeat(4, 1fr);
  gap: 1rem;
  min-height: 60vh;
+
+ @media screen and (max-width: 1024px){
+  grid-template-columns: 1fr;
+ }
 `
 export const PopSaleHeader = styled.h1`
  margin-left: 20px;
@@ -25,6 +29,10 @@ export const PopSaleItem = styled.div`
  margin: 0 10px;
  position: relative;
  top: 30px;
+
+ @media screen and (max-width: 1024px){
+  margin-top: 30px;
+ }
 `
 export const PopCate = styled.div`
  text-align: center;
@@ -58,6 +66,17 @@ export const PopSaleImg = styled.div`
     &:hover{
       transform: scale(1);
     }
+ }
+
+ @media screen and (max-width: 1024px) {
+  img{
+    transform: scale(1.03);
+    transition: transform 2s ease;
+
+    &:hover{
+      transform: scale(1);
+    }
+ }
  }
 `
 

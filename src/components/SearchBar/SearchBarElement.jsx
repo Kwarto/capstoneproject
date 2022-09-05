@@ -21,6 +21,10 @@ export const SearchContainer = styled.div`
         color: rgb(1, 1, 7);
     }
  }
+
+ @media screen and (max-width: 1024px){
+    width: 90%;
+ }
 `
 
 export const SearchIcon = styled.div`

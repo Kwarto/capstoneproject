@@ -10,6 +10,10 @@ export const NewsLetterHead = styled.div`
  text-transform: capitalize;
  font-size: 40px;
  font-weight: 600;
+
+ @media screen and (max-width: 1024px){
+    font-size: 30px;
+ }
 `
 
 export const NewsletterForm = styled.div`
@@ -43,6 +47,15 @@ form{
         width: max-content;
         margin: 15px auto;
         background: rgb(241, 174, 43);
+    }
+
+    @media screen and (max-width: 1024px){
+        width: 100%;
+
+        input{
+            width: 100%;
+            padding: 15px 25px;
+        }
     }
 }
 `

@@ -16,6 +16,10 @@ export const CatWrapperHeading = styled.div`
  padding: 5px;
  width: 50%;
  text-align: center;
+
+ @media screen and (max-width: 1024px){
+  width: 90%;
+ }
 `
 
 export const CategoryItemList = styled.div`
@@ -24,23 +28,40 @@ export const CategoryItemList = styled.div`
  gap: 2rem;
  min-height: 80vh;
  margin: 10px 10px;
+
+ @media screen and (max-width: 1024px){
+  grid-template-columns: 1fr;
+ }
 `
 
 export const ItemList = styled.div`
  article{
    margin: 10% 30px;
-   background: rgba(255, 0, 0, 0.075);
+   background: rgba(255, 0, 0, 0.212);
    position: relative;
    padding: 10px;
    h4{
     text-align: center;
     margin: 20px 0;
     font-size: 50px;
+    color: rgba(255, 255, 255, 0.767);
+    cursor: pointer;
    }
    p{
     width: 95%;
     text-align: center;
     margin-top: 10px;
+    font-size: 20px;
    }
+
+   @media screen and (max-width: 1024px){
+    p{
+      width: 100%;
+    }
+   }
+ }
+
+ img{
+  margin-top: 12px;
  }
 `

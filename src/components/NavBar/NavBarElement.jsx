@@ -5,6 +5,9 @@ export const NavbarWrapper = styled.div`
  align-items: center;
  justify-content: space-between;
  box-shadow: var(--box-shadow);
+ @media screen and (max-width: 1024px) {
+  padding: 3rem 0;
+ }
 `
 
 export const LeftList = styled.div`
@@ -18,7 +21,15 @@ export const LogoWrapper = styled.div`
  /* margin: 0 auto; */
  text-align: center;
  img{
-    width: 28%;
+    width: 38%;
+ }
+
+ @media screen and (max-width: 1024px) {
+    position: absolute;
+    left: 0;
+    img{
+    width: 48%;
+ }
  }
 `
 export const NavList = styled.div`
@@ -51,8 +62,7 @@ export const List = styled.div`
     position: relative;
   }
 
-  img{
-      width: 20%;
-      border-radius: 100%;
-    }
+  @media screen and (max-width: 1024px) {
+    display: none;
+  }
 `

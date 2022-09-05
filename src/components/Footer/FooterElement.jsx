@@ -12,6 +12,10 @@ export const FooterContent = styled.div`
  display: grid;
  grid-template-columns: 30% 68%;
  gap: 2%;
+
+ @media screen and (max-width: 1024px){
+   grid-template-columns: 100%;
+ }
 `
 
 export const LeftContent = styled.div`
@@ -21,6 +25,10 @@ box-shadow: var(--box-shadow);
 color: #000000;
 text-align: center;
 margin: 0 10px;
+
+@media screen and (max-width: 1024px){
+   min-height: 40vh;
+}
 
 .last{
     margin-top: 50px;
@@ -48,6 +56,10 @@ export const RightContent = styled.div`
  grid-template-columns: repeat(3, 1fr);
  gap: 1rem;
  margin: 0 10px;
+
+ @media screen and (max-width: 1024px) {
+   grid-template-columns: 1fr;
+ }
 `
 
 export const FooterList = styled.div`
@@ -58,6 +70,15 @@ export const FooterList = styled.div`
     width: 80%;
     margin-left: 10%;
     margin-top: 15px;
+ }
+
+ @media screen and (max-width: 1024px) {
+   min-height: 34vh;
+   img{
+    width: 50%;
+    margin-left: 28%;
+    margin-top: 15px;
+ }
  }
 `
 

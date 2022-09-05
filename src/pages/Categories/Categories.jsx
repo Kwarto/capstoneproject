@@ -10,7 +10,7 @@ function Categories() {
           <CatWrapperHeading>Product Categories</CatWrapperHeading>
 
           <CategoryItemList>
-             <ItemList>
+             <ItemList className='main'>
               <article>
               <h4>Bungalow</h4>
                 <p>
@@ -27,7 +27,7 @@ function Categories() {
              <ItemList>
                <img src={ListImg1} alt="" />
              </ItemList>
-             <ItemList>
+             <ItemList className='main'>
               <article>
               <h4>Skyscrapers</h4>
                 <p>
@@ -38,7 +38,7 @@ function Categories() {
                 </p>
               </article>
              </ItemList>
-             <ItemList>
+             <ItemList className='main'>
               <article>
               <h4>2 Bedroom</h4>
                 <p>

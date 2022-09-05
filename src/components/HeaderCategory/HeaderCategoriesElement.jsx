@@ -23,6 +23,15 @@ export const CategoryWrapper = styled.div`
     text-align: center;
     font-weight: 700;
  }
+
+ @media screen and (max-width: 1024px) {
+   grid-template-columns: 1fr;
+   &::before{
+      width: 26%;
+      height: 5%;
+      top: -2px;
+   }
+ }
 `
 
 export const CateItems = styled.div`
@@ -44,6 +53,10 @@ export const CateItems = styled.div`
     top: 40px;
     right: -52px;
     background: var(--main-bg);
+
+    @media screen and (max-width: 1024px){
+      right: -8px;
+    }
  }
  }
 `

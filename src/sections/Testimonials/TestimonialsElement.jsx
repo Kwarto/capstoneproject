@@ -23,12 +23,18 @@ export const TestimonialListWrapper = styled.div`
  place-items: center;
  margin: 50px;
  padding: 60px 20px;
+
+ @media screen and (max-width: 1024px){
+  grid-template-columns: 1fr;
+ }
 `
 
 export const ListItems = styled.article`
  background: rgb(241,174,43);
  height: max-content;
-
+ @media screen and (max-width: 1024px){
+  margin-top: 15px;
+}
  strong{
     text-align: center;
     margin: 0 30%;
@@ -45,7 +51,9 @@ export const Items = styled.div`
   height: max-content;
   border: 1px solid rgba(243, 175, 2, 0.975);
   right: 40px;
-
+  @media screen and (max-width: 1024px){
+    right: 34px;
+  }
   img{
     width: 15%;
     position: relative;

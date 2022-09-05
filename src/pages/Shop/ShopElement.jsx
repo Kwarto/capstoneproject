@@ -5,6 +5,10 @@ export const ShopItemWrapper = styled.div`
  display: grid;
  grid-template-columns: 78% 20%;
  gap: 2%;
+
+ @media screen and (max-width: 1024px){
+  grid-template-columns: 1fr;
+ }
 `
 
 
@@ -14,6 +18,10 @@ export const ProductCard = styled.div`
  grid-template-columns: repeat(3, 1fr);
  gap: 1.5rem;
  padding: 30px;
+
+ @media screen and (max-width: 1024px){
+  grid-template-columns: 1fr;
+ }
 `
 
 export const CardItems = styled.div`

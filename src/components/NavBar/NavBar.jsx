@@ -31,7 +31,7 @@ function NavBar() {
             <span>0</span>
            </List>
            <List>
-            <a href="/">Account</a>
+            <a href="my-account">Account</a>
            </List>
         </NavList>
       </NavbarWrapper>

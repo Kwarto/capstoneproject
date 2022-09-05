@@ -8,6 +8,10 @@ export const HeaderSliderWrapper = styled.header`
  display: flex;
  justify-content: center;
  align-items: center;
+
+ @media screen and (max-width: 1024px){
+  min-height: 70vh;
+ }
 `
 
 export const SliderMainWrapper = styled.div`
@@ -15,6 +19,11 @@ export const SliderMainWrapper = styled.div`
  display: grid;
  grid-template-columns: 40% 60%;
  transform: scale(1.02);
+
+ @media screen and (max-width: 1024px){
+  grid-template-columns: 100%;
+  height: 70vh;
+ }
 `
 
 export const SliderItem = styled.div`
@@ -42,4 +51,8 @@ export const SliderText = styled.h2`
  font-weight: 600;
  text-align: center;
  text-transform: uppercase;
+
+ @media screen and (max-width: 1024px){
+  font-size: 30px;
+ }
 `
