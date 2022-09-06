@@ -212,7 +212,7 @@ function Shop() {
         </SkyList>
       </ShopSky>
 
-      <ShopBed className='container'>
+      <ShopBed>
       <ProductCard>
           <CardItems>
           <Product

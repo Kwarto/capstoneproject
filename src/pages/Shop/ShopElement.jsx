@@ -8,7 +8,7 @@ export const ShopItemWrapper = styled.div`
 
  @media screen and (max-width: 1024px){
   grid-template-columns: 1fr;
-  overflow-x: hidden;
+  overflow: hidden;
  }
 `
 
@@ -52,7 +52,7 @@ export const FilterSelector = styled.div`
 `
 
 export const ShopSky = styled.div`
-margin-top: 5rem;
+ margin-top: 5rem;
  padding: 100px 0;
  background: var(--main-bg);
 `
@@ -82,12 +82,7 @@ export const BungCate = styled.div`
 
 export const SkyList = styled.div`
  background: #fff;
- margin: 0 15px;
- transform: scale(1);
- transition:  transform 2s ease-in;
- &:hover{
-  transform: scale(1.02);
- }
+ /* margin: 0 15px; */
 `
 
 export const ShopBed = styled.div`
