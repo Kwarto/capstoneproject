@@ -82,6 +82,5 @@ img{
     position: fixed;
     top: 3.8rem;
     z-index: 100;
-    min-height: 35vh;
   }
 }
