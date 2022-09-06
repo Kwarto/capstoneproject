@@ -1,7 +1,12 @@
 import styled from "styled-components";
 
 export const NavbarWrapper = styled.div`
+ position: fixed;
+ top: 0;
+ width: 100%;
+ z-index: 100;
  display: flex;
+ background: #fff;
  align-items: center;
  justify-content: space-between;
  box-shadow: var(--box-shadow);
@@ -10,33 +15,33 @@ export const NavbarWrapper = styled.div`
  }
 `
 
-export const LeftList = styled.div`
- display: flex;
- justify-content: space-between;
- margin-left: 30px;
-`
-
 export const LogoWrapper = styled.div`
- width: 20%;
- /* margin: 0 auto; */
+ width: 10%;
  text-align: center;
  img{
     width: 38%;
  }
 
  @media screen and (max-width: 1024px) {
+  width: 15%;
     position: absolute;
     left: 0;
     img{
-    width: 48%;
+    width: 45%;
  }
  }
 `
+
 export const NavList = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
   margin-right: 30px;
+  @media screen and (max-width: 1024px) {
+    display: block;
+    width: 30rem;
+    padding: 20px;
+  }
 `
 
 export const List = styled.div`
@@ -54,15 +59,36 @@ export const List = styled.div`
     color: #fff;
     font-weight: 600;
   }
-  padding: 0 30px;
+  padding: 0 40px;
   a{
     font-size: 15px;
     font-weight: 600;
     color: var(--main-bg);
     position: relative;
+     
+    @media screen and (max-width: 1024px){
+      font-size: 30px;
+    }
   }
 
   @media screen and (max-width: 1024px) {
-    display: none;
+    margin-top: 60px;
+    box-shadow: var(--box-shadow);
+    padding: 20px 30px;
+    width: 90%;
+    display: block;
+    text-align: center;
   }
+`
+
+export const MenuBar = styled.div`
+ margin-right: 35px;
+ cursor: pointer;
+ display: none;
+
+ @media screen and (max-width: 1024px){
+   display: flex;
+   position: absolute;
+   right: 0;
+ }
 `

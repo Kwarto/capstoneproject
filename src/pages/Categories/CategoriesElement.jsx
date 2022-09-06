@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const CategoriesWrapper = styled.div`
  padding: 30px 0;
+ margin-top: 10rem;
 `
 
 export const CatWrapperHeading = styled.div`

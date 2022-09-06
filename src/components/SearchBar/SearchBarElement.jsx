@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const SearchWrapper = styled.div`
  padding: 30px 0;
+ margin-top: 10rem;
 `
 
 export const SearchContainer = styled.div`

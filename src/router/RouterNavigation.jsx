@@ -10,8 +10,8 @@ import EmptyCart from '../pages/Cart/EmptyCart'
 import Login from '../pages/Account/Login/Login'
 import Register from '../pages/Account/Register/Register'
 import Checkout from '../pages/Checkout/Checkout';
-import Error from '../pages/Error/ErrorPage'
-import Order from '../pages/Order/OrderStatus'
+import OrderReceived from '../pages/Order/OrderStatus'
+import ErrorPage from '../pages/Error/ErrorPage'
 import NavBar from '../components/NavBar/NavBar'
 import Footer from '../components/Footer/Footer'
 
@@ -26,10 +26,10 @@ function RouterNavigation() {
           <Route path='shop' element={<Shop />} />
           <Route path='categories' element={<Categories />} />
           <Route path='cart' element={<Cart />} />
-          <Route path='empty-cart' element={<EmptyCart />} />
+          <Route path='empty_cart' element={<EmptyCart />} />
           <Route path='checkout' element={<Checkout />} />
-          <Route path='oder-received' element={<Order />} />
-          <Route path='error404' element={<Error />} />
+          <Route path='order_received' element={<OrderReceived />} />
+          <Route path='error_page_404' element={<ErrorPage />} />
           <Route path='account' element={<Account />} />
           <Route path='my-account' element={<MyAccount />} />
           <Route path='login' element={<Login />} />

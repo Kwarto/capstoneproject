@@ -8,6 +8,7 @@ export const HeaderSliderWrapper = styled.header`
  display: flex;
  justify-content: center;
  align-items: center;
+ margin-top: 5rem;
 
  @media screen and (max-width: 1024px){
   min-height: 70vh;

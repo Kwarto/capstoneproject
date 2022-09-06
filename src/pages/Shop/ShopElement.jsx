@@ -8,6 +8,7 @@ export const ShopItemWrapper = styled.div`
 
  @media screen and (max-width: 1024px){
   grid-template-columns: 1fr;
+  overflow-x: hidden;
  }
 `
 
@@ -20,6 +21,9 @@ export const ProductCard = styled.div`
  padding: 30px;
 
  @media screen and (max-width: 1024px){
+  grid-template-columns: 1fr 1fr;
+ }
+ @media screen and (max-width: 768px){
   grid-template-columns: 1fr;
  }
 `

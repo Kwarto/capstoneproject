@@ -8,6 +8,7 @@ export const RegisterWrapper = styled.div`
 
 export const RegisterFormContainer = styled.div`
     padding: 100px 20px;
+    margin-top: 8rem;
     box-shadow: var(--box-shadow);
     min-height: 450px;
     display: grid;

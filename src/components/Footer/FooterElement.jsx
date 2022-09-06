@@ -27,7 +27,7 @@ text-align: center;
 margin: 0 10px;
 
 @media screen and (max-width: 1024px){
-   min-height: 40vh;
+   min-height: 50vh;
 }
 
 .last{

@@ -1,14 +1,18 @@
 import React from 'react'
-import { NavbarWrapper, LeftList, LogoWrapper, NavList, List } from './NavBarElement'
+import { NavbarWrapper, MenuBar, LogoWrapper, NavList, List } from './NavBarElement'
 import Logo from '../../images/jalel-real-estate-logo.png'
-// import IoMdNotifications from 'react-icons/io'
-// import MdAccountCircle from 'react-icons/md'
-// import BsFillCartCheckFill from 'react-icons/bs'
+import {FaBars} from 'react-icons/fa'
 function NavBar() {
   return (
     <>
       <NavbarWrapper>
-        <LeftList>
+        <LogoWrapper>
+          <a href="/"><img src={Logo} alt="jalel-logo" /></a>
+        </LogoWrapper>
+        <NavList className='nav-item'>
+           <List>
+            <a href="/">Home</a>
+           </List>
            <List>
             <a href="shop">Shop</a>
            </List>
@@ -16,24 +20,22 @@ function NavBar() {
             <a href="categories ">Categories</a>
            </List>
            <List>
-            <a href="register">Register</a>
-           </List>
-        </LeftList>
-        <LogoWrapper>
-          <a href="/"><img src={Logo} alt="jalel-logo" /></a>
-        </LogoWrapper>
-        <NavList>
-           <List>
-            <a href="/" className='notify'>Notification</a>
-           </List>
-           <List>
             <a href="cart">Cart</a>
             <span>0</span>
+           </List>
+           <List>
+            <a href="register">Register</a>
+           </List>
+           <List>
+            <a href="/" className='notify'>Notification</a>
            </List>
            <List>
             <a href="my-account">Account</a>
            </List>
         </NavList>
+        <MenuBar>
+         <FaBars className='menuBar' />
+        </MenuBar>
       </NavbarWrapper>
     </>
   )

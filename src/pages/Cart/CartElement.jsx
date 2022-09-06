@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const CartWrapper = styled.div`
  padding: 50px 0;
+ margin-top: 6rem;
 `
 
 export const CartContentWrapper = styled.div`

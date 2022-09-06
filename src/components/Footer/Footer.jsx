@@ -31,8 +31,8 @@ function Footer() {
               <H3>QUICK LINKS</H3>
               <H4>
                 <a href="/">HOME</a>
-                <a href="/">SHOP</a>
-                <a href="/">ACCOUNT</a>
+                <a href="/shop">SHOP</a>
+                <a href="/my-account">ACCOUNT</a>
                 <a href="/">CONTACT</a>
               </H4>
             </FooterList>

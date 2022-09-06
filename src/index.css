@@ -9,8 +9,6 @@
   border: none;
   outline: none;
   transition: all 2s ease;
-  /* overflow-x: hidden; */
-
 }
 
 html{
@@ -60,8 +58,31 @@ img{
   transform: scale(1);
 }
 
+.menuBar{
+  font-size: 30px;
+}
+
 @media screen and (max-width: 1024px) {
   .main{
     transform: scale(1);
+  }
+
+  .nav-item{
+    background: rgb(255, 255, 255);
+    position: fixed;
+    top: 3.8rem;
+    z-index: 100;
+    min-height: 35vh;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .nav-item{
+    background: rgb(255, 255, 255);
+    position: fixed;
+    top: 3.8rem;
+    z-index: 100;
+    min-height: 35vh;
   }
 }
