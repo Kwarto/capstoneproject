@@ -76,8 +76,9 @@ export const List = styled.div`
     box-shadow: var(--box-shadow);
     padding: 20px 30px;
     width: 90%;
-    display: block;
-    text-align: center;
+    display: none;
+    align-items: center;
+    justify-content: center;
   }
 `
 
