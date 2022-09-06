@@ -12,6 +12,11 @@ export const HeaderSliderWrapper = styled.header`
 
  @media screen and (max-width: 1024px){
   min-height: 70vh;
+  border-radius: 50rem 0 0 0;
+ }
+
+ @media screen and (max-width: 768px){
+  border-radius: 40rem 0 0 0;
  }
 `
 

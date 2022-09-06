@@ -5,7 +5,6 @@ export const FooterWrapper = styled.div`
  background: linear-gradient(134deg, rgba(59, 7, 73, 0.897),rgba(72, 23, 85, 0.781)), url(${FooterBg});
  color: #fff;
  font-weight: 600;
- mix-blend-mode: screen;
 `
 
 export const FooterContent = styled.div`
@@ -15,6 +14,9 @@ export const FooterContent = styled.div`
 
  @media screen and (max-width: 1024px){
    grid-template-columns: 100%;
+ }
+ @media screen and (max-width: 768px) {
+   grid-template-columns: 1fr;
  }
 `
 
@@ -58,6 +60,9 @@ export const RightContent = styled.div`
  margin: 0 10px;
 
  @media screen and (max-width: 1024px) {
+   grid-template-columns: 1fr;
+ }
+ @media screen and (max-width: 768px) {
    grid-template-columns: 1fr;
  }
 `
